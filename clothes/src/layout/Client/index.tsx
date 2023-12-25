@@ -5,7 +5,7 @@ import Footer from './Footer'
 
 const LayoutClient = () => {
     return (
-        <div>
+        <div className='w-full mx-auto'>
             <Header />
             <Outlet />
             <Footer />

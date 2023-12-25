@@ -2,14 +2,14 @@ import "./index.css"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LayoutClient from "./layout/Client";
 import LayoutAdmin from "./layout/Admin";
-import Product from "./pages/HomePage/Product";
+import Home from "./pages/HomePage/Home";
 function App() {
-
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<LayoutClient />}>
-          <Route index element={<Product />} />
+          <Route index element={<Home />} />
+          <Route />
         </Route>
         <Route path="/admin" element={<LayoutAdmin />}>
           <Route />
