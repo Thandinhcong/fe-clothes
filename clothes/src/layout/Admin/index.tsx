@@ -1,11 +1,10 @@
 import { useState } from 'react';
 import {
     MenuFoldOutlined, MenuUnfoldOutlined, UserOutlined, VideoCameraOutlined, FundProjectionScreenOutlined, DownOutlined,
-    LoginOutlined, RollbackOutlined, GiftOutlined, UploadOutlined, ApartmentOutlined, FileProtectOutlined
+    LoginOutlined, RollbackOutlined, UploadOutlined
 } from '@ant-design/icons';
 import { Layout, Menu, Button, theme, Breadcrumb, Space, Avatar, Dropdown, MenuProps } from 'antd';
 import { Link, Outlet } from 'react-router-dom';
-import { AiOutlineCalendar } from 'react-icons/ai';
 import { CgWebsite } from 'react-icons/cg';
 import { MdOutlineAddBusiness } from 'react-icons/md';
 const { Header, Sider, Content } = Layout;
@@ -43,15 +42,7 @@ const LayoutAdmin = () => {
             icon: <CgWebsite />,
             label: 'Quản lý Website',
             items: [
-                { key: '5', icon: <UploadOutlined />, label: 'Kinh nghiệm', path: 'experience-manage' },
-                { key: '6', icon: <AiOutlineCalendar />, label: 'Hình thức', path: 'working-form' },
-                { key: '7', icon: <ApartmentOutlined />, label: 'Chức vụ', path: 'jobposition-manage' },
-                // { key: '8', icon: <ControlOutlined />, label: 'Kĩ năng', path: 'skill-manage' },
-                { key: '9', icon: <GiftOutlined />, label: 'Gói nạp', path: 'package-manage' },
-                { key: '10', icon: <FileProtectOutlined />, label: 'Trình độ', path: 'level-manage' },
-                { key: '11', icon: <FileProtectOutlined />, label: 'Chuyên Ngành', path: 'major-manage' },
-                { key: '12', icon: <FileProtectOutlined />, label: 'Gói đăng', path: 'posting-packages' },
-                { key: '13', icon: <FileProtectOutlined />, label: 'Thông tin Website', path: 'manage-website' },
+                { key: '5', icon: <UploadOutlined />, label: 'Danh mục', path: 'experience-manage' },
             ],
         },
     ];
