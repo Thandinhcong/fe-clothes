@@ -17,24 +17,46 @@ const LayoutAdmin = () => {
     } = theme.useToken();
 
     const menuItems = [
-        { key: '1', icon: <FundProjectionScreenOutlined />, label: 'Dashboard', path: '' },
+        { key: '1', icon: <FundProjectionScreenOutlined />, label: 'Dashboard', path: '/admin' },
 
         {
-            key: 'company-management',
+            key: 'products-management',
             icon: <MdOutlineAddBusiness />,
-            label: 'Quản lý công ty',
+            label: 'Sản phẩm',
             items: [
-                { key: '2', icon: <VideoCameraOutlined />, label: 'Bài đăng', path: 'post-manage' },
+                { key: '2', icon: <VideoCameraOutlined />, label: 'Danh sách sản phẩm', path: 'list-products' },
+                { key: '3', icon: <VideoCameraOutlined />, label: 'Thêm sản phẩm', path: 'add-products' },
+                { key: '4', icon: <VideoCameraOutlined />, label: 'Cập nhật sản phẩm', path: 'update-products' },
             ],
         },
 
+        {
+            key: 'categorys-management',
+            icon: <MdOutlineAddBusiness />,
+            label: 'Danh mục',
+            items: [
+                { key: '5', icon: <VideoCameraOutlined />, label: 'Danh sách danh mục', path: 'list-categorys' },
+                { key: '6', icon: <VideoCameraOutlined />, label: 'Thêm danh mục', path: 'add-products' },
+                { key: '7', icon: <VideoCameraOutlined />, label: 'Cập nhật danh mục', path: 'update-products' },
+            ],
+        },
+        {
+            key: 'brands-management',
+            icon: <MdOutlineAddBusiness />,
+            label: 'Thương hiệu',
+            items: [
+                { key: '8', icon: <VideoCameraOutlined />, label: 'Danh sách brands', path: 'list-brands' },
+                { key: '9', icon: <VideoCameraOutlined />, label: 'Thêm brand', path: 'add-brand' },
+                { key: '10', icon: <VideoCameraOutlined />, label: 'Cập nhật brand', path: 'update-brand' },
+            ],
+        },
         {
             key: 'account-management',
             icon: <UserOutlined />,
             label: 'Quản lý tài khoản',
             items: [
-                { key: '3', label: 'Tài khoản ứng viên', path: 'account-manage' },
-                { key: '4', label: 'Tài khoản công Ty', path: 'company-manage' },
+                { key: '3', label: 'Tài khoản người dùng', path: 'account-manage' },
+                { key: '4', label: 'Tài khoản quản trị', path: 'user-manage' },
             ],
         },
         {
@@ -65,7 +87,6 @@ const LayoutAdmin = () => {
         <Layout className='h-screen'>
             <Sider trigger={null} collapsible collapsed={collapsed} style={{ backgroundColor: "rgba(31,41,55)" }} width={220}>
                 <div className="demo-logo-vertical flex justify-center mb-4 mt-8 mx-4 rounded-lg gap-2" >
-                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDM2IDMyIj4KICA8cGF0aAogICAgZmlsbC1ydWxlPSJldmVub2RkIgogICAgY2xpcC1ydWxlPSJldmVub2RkIgogICAgZD0iTTMwLjM0MyAyMS45NzZhMSAxIDAgMDAuNTAyLS44NjRsLjAxOC01Ljc4N2ExIDEgMCAwMS41MDItLjg2NGwzLjEzNy0xLjgwMmExIDEgMCAwMTEuNDk4Ljg2N3YxMC41MjFhMSAxIDAgMDEtLjUwMi44NjdsLTExLjgzOSA2LjhhMSAxIDAgMDEtLjk5NC4wMDFsLTkuMjkxLTUuMzE0YTEgMSAwIDAxLS41MDQtLjg2OHYtNS4zMDVjMC0uMDA2LjAwNy0uMDEuMDEzLS4wMDcuMDA1LjAwMy4wMTIgMCAuMDEyLS4wMDd2LS4wMDZjMC0uMDA0LjAwMi0uMDA4LjAwNi0uMDFsNy42NTItNC4zOTZjLjAwNy0uMDA0LjAwNC0uMDE1LS4wMDQtLjAxNWEuMDA4LjAwOCAwIDAxLS4wMDgtLjAwOGwuMDE1LTUuMjAxYTEgMSAwIDAwLTEuNS0uODdsLTUuNjg3IDMuMjc3YTEgMSAwIDAxLS45OTggMEw2LjY2NiA5LjdhMSAxIDAgMDAtMS40OTkuODY2djkuNGExIDEgMCAwMS0xLjQ5Ni44NjlsLTMuMTY2LTEuODFhMSAxIDAgMDEtLjUwNC0uODdsLjAyOC0xNi40M0ExIDEgMCAwMTEuNTI3Ljg2bDEwLjg0NSA2LjIyOWExIDEgMCAwMC45OTYgMEwyNC4yMS44NmExIDEgMCAwMTEuNDk4Ljg2OHYxNi40MzRhMSAxIDAgMDEtLjUwMS44NjdsLTUuNjc4IDMuMjdhMSAxIDAgMDAuMDA0IDEuNzM1bDMuMTMyIDEuNzgzYTEgMSAwIDAwLjk5My0uMDAybDYuNjg1LTMuODM5ek0zMSA3LjIzNGExIDEgMCAwMDEuNTE0Ljg1N2wzLTEuOEExIDEgMCAwMDM2IDUuNDM0VjEuNzY2QTEgMSAwIDAwMzQuNDg2LjkxbC0zIDEuOGExIDEgMCAwMC0uNDg2Ljg1N3YzLjY2OHoiCiAgICBmaWxsPSIjMDA3RkZGIgogIC8+Cjwvc3ZnPgo=" className='w-10' alt="" />
                     <p className='font-semibold text-2xl text-white'>Admin</p>
                 </div>
                 <Menu
