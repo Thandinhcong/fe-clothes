@@ -1,3 +1,60 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+.cart_item {
+    position: absolute;
+    z-index: 100;
+}
+
+.cart_item::before {
+    content: "1";
+    width: 24px;
+    height: 24px;
+    color: white;
+    border-radius: 100px;
+    background-color: green;
+    text-align: center;
+    display: none;
+    z-index: 9999;
+    position: absolute;
+}
+
+.send_to_cart .cart_item{
+    display: block;
+    animation: xAxis forwards 1s cubic-bezier(1, 0.4, 0.84,  0.165);
+}
+
+@keyframes tossXAxis {
+    100% {
+        transform: translateX(calc(100vw - 380px));
+    }
+}
+
+.send_to_cart .cart_item::before{
+    display: block;
+    animation: yAxis alternate forwards 1s cubic-bezier(0.165, 0.84, 0.4, 1);
+}
+
+#cart.shake {
+    animation: shake .4s ease-in-out forwards;
+}
+
+
+@keyframes shake {
+    0% {
+        transform: translateX(10px);
+    }
+    25% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-10px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}

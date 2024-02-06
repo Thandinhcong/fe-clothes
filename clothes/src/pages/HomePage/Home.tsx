@@ -1,9 +1,13 @@
 import React from "react";
+import { CartItem } from "../../components";
+
+
 
 const Home = () => {
+    
     return (
         <>
-    <div className="">
+        <div className="">
             <img src="https://www.thistlesstirling.com/wp-content/uploads/2016/08/BW6100-Thistles-Spring_Summer-Fashion-Web-Banner-1920x1080px2.jpg" alt="" className="w-full "/>
         </div>
         <div className="w-full my-8 xl:px-10">
@@ -11,202 +15,11 @@ const Home = () => {
                 <h1 className="text-4xl font-bold font-['Arimo'] leading-[55px] text-stone-90">Discover NEW Arrivals</h1>
                 <p className="text-center text-neutral-600 text-xl font-normal font-['Lato'] leading-[48px]">Recently added shirts!</p>
             </div>
-            <div className="content grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-5 mx-auto w-full container mt-[50px] p-3">
-                <div className="relative group mb-14">
-                    <img
-                      src="https://images.asos-media.com/products/asos-design-knitted-scarf-in-grey-marl/204700456-2?$n_480w$&wid=476&fit=constrain"
-                      className="w-full h-full"
-                      alt="" />
-                    <div
-                      className="absolute inset-0 w-full overflow-hidden transition-opacity duration-300 ease-in-out bg-gray-200 opacity-0 hover:opacity-50">
-                      <div className="flex gap-3 items-center absolute xl:top-1/2 xl:left-[30%] md:top-1/2 md:left-[20%] lg:top-1/2 lg:left-[27%] top-1/2 left-[34%]">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-10 h-10">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="m15.75 15.75-2.489-2.489m0 0a3.375 3.375 0 1 0-4.773-4.773 3.375 3.375 0 0 0 4.774 4.774ZM21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-10 h-10">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-10 h-10">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                        </svg>     
-                      </div>
-                    </div> 
-                    <div className="absolute bottom-0 left-0 w-full pb-2 text-center">
-                        <h4 className="text-base font-bold leading-10 text-white xl:text-2xl">Denim Jacket</h4>
-                        <p className="text-base text-sky-500">$$69.00</p>
-                    </div>
-                </div>
-                <div className="relative group mb-14">
-                    <img
-                      src="https://images.asos-media.com/products/asos-design-knitted-scarf-in-grey-marl/204700456-2?$n_480w$&wid=476&fit=constrain"
-                      className="w-full h-full"
-                      alt="" />
-                    <div
-                      className="absolute inset-0 w-full overflow-hidden transition-opacity duration-300 ease-in-out bg-gray-200 opacity-0 hover:opacity-50">
-                      <div className="flex gap-3 items-center absolute xl:top-1/2 xl:left-[30%] md:top-1/2 md:left-[20%] lg:top-1/2 lg:left-[27%] top-1/2 left-[34%]">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-10 h-10">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="m15.75 15.75-2.489-2.489m0 0a3.375 3.375 0 1 0-4.773-4.773 3.375 3.375 0 0 0 4.774 4.774ZM21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-10 h-10">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-10 h-10">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                        </svg>     
-                      </div>
-                    </div> 
-                    <div className="absolute bottom-0 left-0 w-full pb-2 text-center">
-                        <h4 className="text-base font-bold leading-10 text-white xl:text-2xl">Denim Jacket</h4>
-                        <p className="text-base text-sky-500">$$69.00</p>
-                    </div>
-                </div>
-                <div className="relative group mb-14">
-                    <img
-                      src="https://images.asos-media.com/products/asos-design-knitted-scarf-in-grey-marl/204700456-2?$n_480w$&wid=476&fit=constrain"
-                      className="w-full h-full"
-                      alt="" />
-                    <div
-                      className="absolute inset-0 w-full overflow-hidden transition-opacity duration-300 ease-in-out bg-gray-200 opacity-0 hover:opacity-50">
-                      <div className="flex gap-3 items-center absolute xl:top-1/2 xl:left-[30%] md:top-1/2 md:left-[20%] lg:top-1/2 lg:left-[27%] top-1/2 left-[34%]">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-10 h-10">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="m15.75 15.75-2.489-2.489m0 0a3.375 3.375 0 1 0-4.773-4.773 3.375 3.375 0 0 0 4.774 4.774ZM21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-10 h-10">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-10 h-10">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                        </svg>     
-                      </div>
-                    </div> 
-                    <div className="absolute bottom-0 left-0 w-full pb-2 text-center">
-                        <h4 className="text-base font-bold leading-10 text-white xl:text-2xl">Denim Jacket</h4>
-                        <p className="text-base text-sky-500">$$69.00</p>
-                    </div>
-                </div>
-                <div className="relative group mb-14">
-                    <img
-                      src="https://images.asos-media.com/products/asos-design-knitted-scarf-in-grey-marl/204700456-2?$n_480w$&wid=476&fit=constrain"
-                      className="w-full h-full"
-                      alt="" />
-                    <div
-                      className="absolute inset-0 w-full overflow-hidden transition-opacity duration-300 ease-in-out bg-gray-200 opacity-0 hover:opacity-50">
-                      <div className="flex gap-3 items-center absolute xl:top-1/2 xl:left-[30%] md:top-1/2 md:left-[20%] lg:top-1/2 lg:left-[27%] top-1/2 left-[34%]">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-10 h-10">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="m15.75 15.75-2.489-2.489m0 0a3.375 3.375 0 1 0-4.773-4.773 3.375 3.375 0 0 0 4.774 4.774ZM21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-10 h-10">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-10 h-10">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                        </svg>     
-                      </div>
-                    </div> 
-                    <div className="absolute bottom-0 left-0 w-full pb-2 text-center">
-                        <h4 className="text-base font-bold leading-10 text-white xl:text-2xl">Denim Jacket</h4>
-                        <p className="text-base text-sky-500">$$69.00</p>
-                    </div>
-                </div>
-                <div className="relative group mb-14">
-                    <img
-                      src="https://images.asos-media.com/products/asos-design-knitted-scarf-in-grey-marl/204700456-2?$n_480w$&wid=476&fit=constrain"
-                      className="w-full h-full"
-                      alt="" />
-                    <div
-                      className="absolute inset-0 w-full overflow-hidden transition-opacity duration-300 ease-in-out bg-gray-200 opacity-0 hover:opacity-50">
-                      <div className="flex gap-3 items-center absolute xl:top-1/2 xl:left-[30%] md:top-1/2 md:left-[20%] lg:top-1/2 lg:left-[27%] top-1/2 left-[34%]">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-10 h-10">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="m15.75 15.75-2.489-2.489m0 0a3.375 3.375 0 1 0-4.773-4.773 3.375 3.375 0 0 0 4.774 4.774ZM21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-10 h-10">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-10 h-10">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                        </svg>     
-                      </div>
-                    </div> 
-                    <div className="absolute bottom-0 left-0 w-full pb-2 text-center">
-                        <h4 className="text-base font-bold leading-10 text-white xl:text-2xl">Denim Jacket</h4>
-                        <p className="text-base text-sky-500">$$69.00</p>
-                    </div>
-                </div>
-                <div className="relative group mb-14">
-                    <img
-                      src="https://images.asos-media.com/products/asos-design-knitted-scarf-in-grey-marl/204700456-2?$n_480w$&wid=476&fit=constrain"
-                      className="w-full h-full"
-                      alt="" />
-                    <div
-                      className="absolute inset-0 w-full overflow-hidden transition-opacity duration-300 ease-in-out bg-gray-200 opacity-0 hover:opacity-50">
-                      <div className="flex gap-3 items-center absolute xl:top-1/2 xl:left-[30%] md:top-1/2 md:left-[20%] lg:top-1/2 lg:left-[27%] top-1/2 left-[34%]">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-10 h-10">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="m15.75 15.75-2.489-2.489m0 0a3.375 3.375 0 1 0-4.773-4.773 3.375 3.375 0 0 0 4.774 4.774ZM21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-10 h-10">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-10 h-10">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                        </svg>     
-                      </div>
-                    </div> 
-                    <div className="absolute bottom-0 left-0 w-full pb-2 text-center">
-                        <h4 className="text-base font-bold leading-10 text-white xl:text-2xl">Denim Jacket</h4>
-                        <p className="text-base text-sky-500">$$69.00</p>
-                    </div>
-                </div>
-                <div className="relative group mb-14">
-                    <img
-                      src="https://images.asos-media.com/products/asos-design-knitted-scarf-in-grey-marl/204700456-2?$n_480w$&wid=476&fit=constrain"
-                      className="w-full h-full"
-                      alt="" />
-                    <div
-                      className="absolute inset-0 w-full overflow-hidden transition-opacity duration-300 ease-in-out bg-gray-200 opacity-0 hover:opacity-50">
-                      <div className="flex gap-3 items-center absolute xl:top-1/2 xl:left-[30%] md:top-1/2 md:left-[20%] lg:top-1/2 lg:left-[27%] top-1/2 left-[34%]">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-10 h-10">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="m15.75 15.75-2.489-2.489m0 0a3.375 3.375 0 1 0-4.773-4.773 3.375 3.375 0 0 0 4.774 4.774ZM21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-10 h-10">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-10 h-10">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                        </svg>     
-                      </div>
-                    </div> 
-                    <div className="absolute bottom-0 left-0 w-full pb-2 text-center">
-                        <h4 className="text-base font-bold leading-10 text-white xl:text-2xl">Denim Jacket</h4>
-                        <p className="text-base text-sky-500">$$69.00</p>
-                    </div>
-                </div>
-                <div className="relative group mb-14">
-                    <img
-                      src="https://images.asos-media.com/products/asos-design-knitted-scarf-in-grey-marl/204700456-2?$n_480w$&wid=476&fit=constrain"
-                      className="w-full h-full"
-                      alt="" />
-                    <div
-                      className="absolute inset-0 w-full overflow-hidden transition-opacity duration-300 ease-in-out bg-gray-200 opacity-0 hover:opacity-50">
-                      <div className="flex gap-3 items-center absolute xl:top-1/2 xl:left-[30%] md:top-1/2 md:left-[20%] lg:top-1/2 lg:left-[27%] top-1/2 left-[34%]">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-10 h-10">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="m15.75 15.75-2.489-2.489m0 0a3.375 3.375 0 1 0-4.773-4.773 3.375 3.375 0 0 0 4.774 4.774ZM21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-10 h-10">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-10 h-10">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                        </svg>     
-                      </div>
-                    </div> 
-                    <div className="absolute bottom-0 left-0 w-full pb-2 text-center">
-                        <h4 className="text-base font-bold leading-10 text-white xl:text-2xl">Denim Jacket</h4>
-                        <p className="text-base text-sky-500">$$69.00</p>
-                    </div>
-                </div>
+            <div className="content grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 mx-auto w-full container mt-[50px] p-3">
+                {Array.from({length: 8}).map((_, index) => <CartItem key={index} />)}
             </div>
         </div>
-        <div className="grid grid-cols-1 gap-6 mx-12 md:grid-cols-4 xl:grid-cols-4 md:px-3">
+        <div className="container grid grid-cols-1 gap-6 mx-12 mx-auto md:grid-cols-4 xl:grid-cols-4">
             <div className="">
                 <div className="flex items-center gap-5">
                     <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-car" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#024E82" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -280,7 +93,7 @@ const Home = () => {
             <div className="content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 mt-[50px] xl:px-14">
                 <div className="relative group">
                     <img
-                      src="https://images.asos-media.com/products/asos-design-knitted-scarf-in-grey-marl/204700456-2?$n_480w$&wid=476&fit=constrain"
+                      src="https://lunya.co/cdn/shop/files/LOFTY_WOOL_WHIP_STITCH_PULLOVER_TOASTED_MARL-1.jpg?v=1700242026"
                       className="w-full h-full"
                       alt="" />
                     <div
@@ -304,7 +117,7 @@ const Home = () => {
                 </div>
                 <div className="relative group">
                     <img
-                      src="https://images.asos-media.com/products/asos-design-knitted-scarf-in-grey-marl/204700456-2?$n_480w$&wid=476&fit=constrain"
+                      src="https://lunya.co/cdn/shop/files/LOFTY_WOOL_WHIP_STITCH_PULLOVER_TOASTED_MARL-1.jpg?v=1700242026"
                       className="w-full h-full"
                       alt="" />
                     <div
@@ -328,7 +141,7 @@ const Home = () => {
                 </div>
                 <div className="relative group">
                     <img
-                      src="https://images.asos-media.com/products/asos-design-knitted-scarf-in-grey-marl/204700456-2?$n_480w$&wid=476&fit=constrain"
+                      src="https://lunya.co/cdn/shop/files/LOFTY_WOOL_WHIP_STITCH_PULLOVER_TOASTED_MARL-1.jpg?v=1700242026"
                       className="w-full h-full"
                       alt="" />
                     <div
@@ -352,7 +165,7 @@ const Home = () => {
                 </div>
                 <div className="relative group">
                     <img
-                      src="https://images.asos-media.com/products/asos-design-knitted-scarf-in-grey-marl/204700456-2?$n_480w$&wid=476&fit=constrain"
+                      src="https://lunya.co/cdn/shop/files/LOFTY_WOOL_WHIP_STITCH_PULLOVER_TOASTED_MARL-1.jpg?v=1700242026"
                       className="w-full h-full"
                       alt="" />
                     <div

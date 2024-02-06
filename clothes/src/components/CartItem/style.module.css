@@ -1,0 +1,39 @@
+.cart_item {
+    position: absolute;
+}
+
+.cart_item::before {
+    content: "1";
+    width: 24px;
+    height: 24px;
+    color: white;
+    border-radius: 100px;
+    background-color: green;
+    text-align: center;
+    display: block;
+    position: relative;
+    z-index: 100;
+}
+
+.send_to_cart .cart_item{
+    display: block;
+    z-index: 100;
+    animation: tossXAxis forwards 4s cubic-bezier(1, 0.4, 0.84,  0.165);
+}
+
+/* .send_to_cart .cart_item::before{
+    animation: yAxis alternate forwards 4s cubic-bezier(0.165, 0.84, 0.4, 1);
+} */
+
+@keyframes tossXAxis {
+    100% {
+        transform: translateX(calc(100vw - 380px));
+    }
+}
+
+@keyframes tossYAxis {
+    100% {
+        /* transform: translateY(calc(-100vh + 30px)); */
+        transform: translateY(calc(-200px));
+    }
+}
