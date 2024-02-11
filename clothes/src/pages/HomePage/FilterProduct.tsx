@@ -1,10 +1,10 @@
 import React from "react";
 import { Fragment, useState } from 'react'
 import { Dialog, Disclosure, Menu, Popover, Transition } from '@headlessui/react'
-import { XMarkIcon } from '@heroicons/react/24/outline'
-import { ChevronDownIcon } from '@heroicons/react/20/solid'
+// import { XMarkIcon } from '@heroicons/react/24/outline'
+// import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { Button, IconButton } from "@material-tailwind/react";
-import { ArrowRightIcon, ArrowLeftIcon } from "@heroicons/react/24/outline";
+// import { ArrowRightIcon, ArrowLeftIcon } from "@heroicons/react/24/outline";
 
 const sortOptions = [
   { name: 'Most Popular', href: '#' },
@@ -114,7 +114,7 @@ const FilterProduct = () => {
                     onClick={() => setOpen(false)}
                   >
                     <span className="sr-only">Close menu</span>
-                    <XMarkIcon className="w-6 h-6" aria-hidden="true" />
+                    {/* <XMarkIcon className="w-6 h-6" aria-hidden="true" /> */}
                   </button>
                 </div>
 
@@ -415,7 +415,7 @@ const FilterProduct = () => {
                     onClick={prev}
                     disabled={active === 1}
                 >
-                    <ArrowLeftIcon strokeWidth={2} className="w-6 h-6" /> Previous
+                    {/* <ArrowLeftIcon strokeWidth={2} className="w-6 h-6" /> Previous */}
                 </Button>
                 <div className="flex items-center justify-center gap-2 ">
                     <IconButton {...getItemProps(1)}>1</IconButton>
@@ -431,7 +431,7 @@ const FilterProduct = () => {
                     disabled={active === 5}
                 >
                     Next
-                    <ArrowRightIcon strokeWidth={2} className="w-6 h-6" />
+                    {/* <ArrowRightIcon strokeWidth={2} className="w-6 h-6" /> */}
                 </Button>
             </div>
         </div>

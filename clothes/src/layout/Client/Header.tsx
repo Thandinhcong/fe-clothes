@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 // import { CartIcon } from '../../assets/icons'
-import { Bars3Icon, MagnifyingGlassIcon, ShoppingBagIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { AiOutlineShoppingCart } from "react-icons/ai";
+import { AiOutlineSearch } from "react-icons/ai";
+import { AiOutlineClose } from "react-icons/ai";
+import { AiOutlineBars } from "react-icons/ai";
 
 const Header = () => {
     const [scrolled, setScrolled] = useState(false)
@@ -76,7 +79,9 @@ const Header = () => {
                 <div className="flex items-center search">
                     <form action="" className="flex items-center hidden md:block">
                         <input type="text" placeholder="Enter search..." className="w-40 h-10 pl-4 transition-all duration-300 bg-gray-100 outline-none md:w-52 focus:w-52 rounded-3xl "/>
-                        <MagnifyingGlassIcon className="absolute w-6 h-6 right-3 top-5"/>            
+                        <div className="absolute text-2xl right-3 top-5">
+                        <AiOutlineSearch />
+                        </div>
                     </form>
                 </div>
                 
@@ -95,25 +100,27 @@ const Header = () => {
                 </div>
                 {isToggleSearch ? (
                         <button onClick={toggleSearch}>
-                            <XMarkIcon className="absolute top-1 w-6 h-6 left-[-25px] md:hidden"/>
+                            <div className="absolute top-1 text-2xl left-[-25px] md:hidden"><AiOutlineClose /></div>
                         </button>
                     )
                     :
                         <button onClick={toggleSearch}>
-                            <MagnifyingGlassIcon className="absolute top-1 w-6 h-6 left-[-25px] md:hidden"/>
+                            <div className="absolute top-1 text-2xl left-[-25px] md:hidden"><AiOutlineSearch /></div>
                         </button>
                     }
                 <div className='relative' id="cart">
-                    <ShoppingBagIcon className='text-black w-7' />
-                    <div className='absolute w-6 h-6 bg-black border border-white top-5 left-4 rounded-3xl'>
+                    <div className='text-3xl'>
+                    <AiOutlineShoppingCart />
+                    </div>
+                    <div className='absolute z-10 w-6 h-6 bg-black border border-white top-5 left-4 rounded-3xl'>
                         <span className='px-2 pb-1 text-white text-[12px]'>1</span>
                     </div>
                 </div>
                 
                 <button onClick={toggleNav}>
-                    <Bars3Icon className="w-7 md:hidden"/>
+                    <div className="text-2xl md:hidden"><AiOutlineBars /></div>
                 </button>
-                <div className={`absolute h-auto p-5 bg-white top-[90%] shadow-lg transition-all w-screen right-[-8px] ${isOpenNav ? "translate-x-0": "translate-x-full"} md:hidden`}  id="navbar-dropdown">
+                <div className={`absolute h-auto p-5 bg-white top-[100%] shadow-lg transition-all w-screen right-[-8px] ${isOpenNav ? "translate-x-0": "translate-x-full"} md:hidden`}  id="navbar-dropdown">
                     <ul className="leading-10 ">
                     <li className=''>
                         <Link to='/' className="text-lg font-bold rounded text-sky-800" aria-current="page">Home</Link>
@@ -150,8 +157,8 @@ const Header = () => {
                     </li>
                     </ul>
                     <div className='grid grid-cols-2 gap-3 mt-5 md:hidden'>
-                        <button className='px-6 py-3 transition duration-300 ease-in-out border border-black rounded-3xl hover:bg-gray-200'>Log in</button>
-                        <button className='px-6 py-3 text-white transition duration-300 ease-in-out bg-black rounded-3xl hover:bg-gray-800'>Sign up</button>
+                        <Link className='px-6 py-3 transition duration-300 ease-in-out border border-black rounded-3xl hover:bg-gray-200'>Log in</Link>
+                        <Link className='px-6 py-3 text-white transition duration-300 ease-in-out bg-black rounded-3xl hover:bg-gray-800'>Sign up</Link>
                     </div>
                 </div>
                 <svg xmlns="http://www.w3.org/2000/svg" className="hidden icon icon-tabler icon-tabler-user" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
